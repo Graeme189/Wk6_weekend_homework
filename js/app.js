@@ -28,6 +28,10 @@ const createInstrumentListItem = function (form) {
   colour.textContent = form.colour.value;
   instrumentListItem.appendChild(colour);
 
+  const purchaseDate = document.createElement('h3')
+  purchaseDate.textContent = form.purchaseDate.value;
+  instrumentListItem.appendChild(purchaseDate);
+
   const category =  document.createElement('p')
   category.textContent = form.category.value;
   instrumentListItem.appendChild(category);
