@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Instrument Database</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <script src="js/app.js"></script>
+  </head>
+  <body>
+    <form id="new-item-form">
+    <div id="form-wrapper">
+      <div class="form-item">
+        <label for="model" class="primary">Model</label>
+        <input type="text" id="model" required/>
+      </div>
+
+      <div class="form-item">
+        <label for="colour" class="primary">colour</label>
+        <input type="text" id="colour" required/>
+      </div>
+
+      <div class="form-item">
+        <label for="category" class="primary">Category</label>
+        <select id="category">
+          <option value="" disabled selected></option>
+          <option value="Bass">Bass</option>
+          <option value="Guitar">Guitar</option>
+          <option value="Mandolin">Mandolin</option>
+          <option value="Banjo">Banjo</option>
+        </select>
+      </div>
+    </div>
+    <input type="submit" value="save"/>
+  </form>
+  <button id="delete-all">Delete All</button>
+  <h1>Instrument List</h1>
+  <div id="instrument-list"></div>
+  </body>
+</html>
