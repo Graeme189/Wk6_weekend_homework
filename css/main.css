@@ -6,16 +6,28 @@
 
 .form-item {
   margin-right: 1.8rem;
+  text-align: center;
 }
 
-li {
-  display:inline-block;
-  list-style-type: none;
-  margin: 5px;
-  padding: 5px;
-  background-color: grey;
-  border-color: black;
-  border-width: 2px;
-  border-radius: 5px;
+label.primary {
+  display: block;
+  margin: 0.4em 0;
+}
 
+#instrument-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+h1 {
+  text-align: center;
+}
+
+.instrumentListItem {
+  margin: 0.5rem 0.5rem;
+  padding: 0.5rem 0.8rem;
+  border: 1px solid #20437c;
+  border-radius: 5%;
+  background: #ddeaff;
 }
