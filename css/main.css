@@ -1,7 +1,16 @@
+body {
+  font-family: 'Lacquer', sans-serif;
+  background-image: url('../images/7PN.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: red;
+}
+
 #form-wrapper {
   width: 100%;
   display: flex;
   flex-direction: row;
+  text-align: center;
 }
 
 .form-item {
@@ -22,6 +31,7 @@ label.primary {
 
 h1 {
   text-align: center;
+  font-size: 48px;
 }
 
 .instrumentListItem {
@@ -30,4 +40,23 @@ h1 {
   border: 1px solid #20437c;
   border-radius: 5%;
   background: #ddeaff;
+}
+
+#delete-all, .save {
+  font-size: 12px;
+  padding: 2px;
+  margin: 4px;
+  background-color: blue;
+  color: yellow;
+}
+
+#delete-all:hover, .save:hover {
+  background-color: #f44336;
+  border-radius: 4px;
+}
+
+#delete-all:active, .save:active {
+  background-color: #f44336;
+  border-radius: 4px;
+  transform: translateY(4px);
 }
