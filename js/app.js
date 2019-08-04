@@ -24,7 +24,11 @@ const createInstrumentListItem = function (form) {
   model.textContent = form.model.value;
   instrumentListItem.appendChild(model);
 
-  const colour = document.createElement('h2');
+  const category =  document.createElement('h2')
+  category.textContent = form.category.value;
+  instrumentListItem.appendChild(category);
+
+  const colour = document.createElement('h3');
   colour.textContent = form.colour.value;
   instrumentListItem.appendChild(colour);
 
@@ -32,12 +36,7 @@ const createInstrumentListItem = function (form) {
   purchaseDate.textContent = form.purchaseDate.value;
   instrumentListItem.appendChild(purchaseDate);
 
-  const category =  document.createElement('p')
-  category.textContent = form.category.value;
-  instrumentListItem.appendChild(category);
-
   return instrumentListItem;
-
 }
 
 const handleDeleteAllClick = function (event) {
